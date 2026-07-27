@@ -1,0 +1,39 @@
+# Ignore all
+*
+
+# Top-level
+!.cade
+!.editorconfig
+!.envrc
+!.gitignore
+!.rustfmt.toml
+!.taplo.toml
+!.tack/
+!.tack/**
+!Cargo.lock
+!Cargo.toml
+!README.md
+!deny.toml
+!flake.nix
+
+# Android project
+!shim/
+!shim/**
+shim/build/
+shim/gradle/
+shim/pushcompat-shim.dex
+
+# Crates
+!crates/
+!crates/**
+crates/**/target/
+crates/**/target/**
+crates/**/Cargo.lock
+
+# Nix
+!nix/
+!nix/**
+
+# CI
+!.github/
+!.github/**

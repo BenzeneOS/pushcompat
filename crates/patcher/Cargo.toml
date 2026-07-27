@@ -1,0 +1,18 @@
+[package]
+name        = "pushcompat-patcher"
+version     = "0.1.0"
+edition     = "2024"
+description = "Patch Android APKs to use UnifiedPush instead of FCM"
+
+[dependencies]
+anyhow.workspace     = true
+etcetera.workspace   = true
+pound.workspace      = true
+regex-lite.workspace = true
+serde.workspace      = true
+serde_json.workspace = true
+walkdir.workspace    = true
+zip.workspace        = true
+
+[lints]
+workspace = true

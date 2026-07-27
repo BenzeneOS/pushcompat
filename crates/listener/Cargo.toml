@@ -1,0 +1,39 @@
+[package]
+name        = "pushcompat-listener"
+version     = "0.1.0"
+edition     = "2024"
+description = "Listen for FCM messages as an Android device"
+license     = "MIT"
+repository  = "https://github.com/BenzeneOS/pushcompat"
+
+[lib]
+name = "pushcompat_listener"
+path = "src/lib.rs"
+
+[dependencies]
+aes-gcm.workspace          = true
+bytes.workspace            = true
+data-encoding.workspace    = true
+flate2.workspace           = true
+hkdf.workspace             = true
+p256.workspace             = true
+pin-project-lite.workspace = true
+quick-protobuf.workspace   = true
+rand.workspace             = true
+reqwest.workspace          = true
+rustls.workspace           = true
+serde.workspace            = true
+serde_json.workspace       = true
+sha2.workspace             = true
+tokio.workspace            = true
+tokio-rustls.workspace     = true
+tokio-stream.workspace     = true
+tracing.workspace          = true
+urlencoding.workspace      = true
+webpki-roots.workspace     = true
+
+[dev-dependencies]
+tracing-subscriber.workspace = true
+
+[lints]
+workspace = true
